@@ -45,9 +45,39 @@ The chatbot uses a **rule-based approach** for domain-specific queries and a **s
 student-helpdesk-ai/
 │
 ├── app.py
+│   └── Main Streamlit application
+│       - Handles UI and user interaction
+│       - Manages chat history using session state
+│       - Connects rule-based logic with AI fallback
+│
 ├── data.py
+│   └── Rule-based response engine
+│       - Handles predefined student queries
+│       - Topics: admissions, fees, exams, courses, hostel
+│
 ├── fallback.py
-├── ai_fallback.py   👈 THIS FILE MUST BE HERE
+│   └── Smart fallback handler
+│       - Triggers AI response when no rule-based match is found
+│       - Ensures smooth user experience for unknown questions
+│
+├── ai_fallback.py
+│   └── HuggingFace AI integration
+│       - Uses a lightweight transformer model
+│       - Generates AI-powered answers for general questions
+│
 ├── requirements.txt
-└── README.md
+│   └── Project dependencies
+│       - streamlit
+│       - transformers
+│       - torch
+│
+├── README.md
+│   └── Project documentation
+│       - Overview
+│       - Features
+│       - Setup instructions
+│       - Project structure
+│
+└── .gitignore
+    └── Files and folders ignored by Git
 
