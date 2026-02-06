@@ -42,3 +42,12 @@ The chatbot uses a **rule-based approach** for domain-specific queries and a **s
 ---
 
 ## 📂 Project Structure
+student-helpdesk-ai/
+│
+├── app.py
+├── data.py
+├── fallback.py
+├── ai_fallback.py   👈 THIS FILE MUST BE HERE
+├── requirements.txt
+└── README.md
+
