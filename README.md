@@ -1,7 +1,7 @@
 # 🎓 Student Helpdesk AI Chatbot
-🎯 A beginner-friendly AI chatbot project built to simulate a real college student helpdesk.
+🎯 A domain-specific AI chatbot designed to simulate a real college student helpdesk experience.
 
-This project is a Student Helpdesk Chatbot built using Python and Streamlit.
+This project is built with Python and Streamlit to provide intelligent and interactive responses to common student queries.
 
 A domain-specific chatbot built using **Python** and **Streamlit** to assist students with common academic and administrative queries.  
 This project demonstrates chatbot logic, basic NLP-style intent handling, session-based chat memory, and a clean user interface.
@@ -94,15 +94,18 @@ student-helpdesk-ai/
 ---
 
 ## 🚀 Future Improvements
-- Add HuggingFace AI fallback
-- Improve NLP intent detection
-- Add user authentication
-- Deploy on Streamlit Cloud
+
+- Enhance AI fallback using advanced HuggingFace models  
+- Improve NLP-based intent classification  
+- Implement user authentication and access control  
+- Deploy the application on Streamlit Cloud for public access  
 
 ---
 
 ## 👩‍💻 Author
-**Jishana Jabir**  
-Beginner AI & Data Science Enthusiast
 
-⭐ If you like this project, give it a star!
+**Jishana Jabir**  
+AI & Data Science Enthusiast  
+
+⭐ If you like this project, consider giving it a star!
+
