@@ -46,6 +46,7 @@ student-helpdesk-ai/
 │
 ├── app.py
 │   └── Main Streamlit application
+<<<<<<< HEAD
 │       - Handles UI
 │       - Manages chat history
 │       - Connects rule-based + AI fallback responses
@@ -62,11 +63,36 @@ student-helpdesk-ai/
 │   └── Smart fallback responses
 │       - Handles unknown questions
 │       - Provides generic helpful answers
+=======
+│       - Handles UI and user interaction
+│       - Manages chat history using session state
+│       - Connects rule-based logic with AI fallback
+│
+├── data.py
+│   └── Rule-based response engine
+│       - Handles predefined student queries
+│       - Topics: admissions, fees, exams, courses, hostel
+│
+├── fallback.py
+│   └── Smart fallback handler
+│       - Triggers AI response when no rule-based match is found
+│       - Ensures smooth user experience for unknown questions
+│
+├── ai_fallback.py
+│   └── HuggingFace AI integration
+│       - Uses a lightweight transformer model
+│       - Generates AI-powered answers for general questions
+>>>>>>> 9d07cdb80ff8ce1f358cbfbe542557e8e1b79e0b
 │
 ├── requirements.txt
 │   └── Project dependencies
 │       - streamlit
+<<<<<<< HEAD
 │       - python libraries
+=======
+│       - transformers
+│       - torch
+>>>>>>> 9d07cdb80ff8ce1f358cbfbe542557e8e1b79e0b
 │
 ├── README.md
 │   └── Project documentation
@@ -76,4 +102,9 @@ student-helpdesk-ai/
 │       - Project structure
 │
 └── .gitignore
+<<<<<<< HEAD
     └── Files ignored by Git
+=======
+    └── Files and folders ignored by Git
+
+>>>>>>> 9d07cdb80ff8ce1f358cbfbe542557e8e1b79e0b
