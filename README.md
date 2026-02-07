@@ -42,3 +42,38 @@ The chatbot uses a **rule-based approach** for domain-specific queries and a **s
 ---
 
 ## 📂 Project Structure
+student-helpdesk-ai/
+│
+├── app.py
+│   └── Main Streamlit application
+│       - Handles UI
+│       - Manages chat history
+│       - Connects rule-based + AI fallback responses
+│
+├── data.py
+│   └── Rule-based responses (FAQs)
+│       - Admissions
+│       - Courses
+│       - Fees
+│       - Hostel
+│       - Exams, etc.
+│
+├── fallback.py
+│   └── Smart fallback responses
+│       - Handles unknown questions
+│       - Provides generic helpful answers
+│
+├── requirements.txt
+│   └── Project dependencies
+│       - streamlit
+│       - python libraries
+│
+├── README.md
+│   └── Project documentation
+│       - Overview
+│       - Features
+│       - Setup instructions
+│       - Project structure
+│
+└── .gitignore
+    └── Files ignored by Git
