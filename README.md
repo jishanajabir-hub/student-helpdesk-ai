@@ -1,4 +1,5 @@
 # 🎓 Student Helpdesk AI Chatbot
+🎯 A beginner-friendly AI chatbot project built to simulate a real college student helpdesk.
 
 This project is a Student Helpdesk Chatbot built using Python and Streamlit.
 
@@ -34,36 +35,24 @@ The chatbot uses a **rule-based approach** for domain-specific queries and a **s
 
 ## 🛠️ Tech Stack
 
-- **Python**
-- **Streamlit**
-- Rule-based NLP logic
-- Session state management
+Language: Python
+
+Frontend: Streamlit
+
+AI Model: HuggingFace Transformers
+
+Version Control: Git & GitHub
+
+Deployment: Streamlit Cloud
 
 ---
 
 ## 📂 Project Structure
+'''text
 student-helpdesk-ai/
 │
 ├── app.py
 │   └── Main Streamlit application
-<<<<<<< HEAD
-│       - Handles UI
-│       - Manages chat history
-│       - Connects rule-based + AI fallback responses
-│
-├── data.py
-│   └── Rule-based responses (FAQs)
-│       - Admissions
-│       - Courses
-│       - Fees
-│       - Hostel
-│       - Exams, etc.
-│
-├── fallback.py
-│   └── Smart fallback responses
-│       - Handles unknown questions
-│       - Provides generic helpful answers
-=======
 │       - Handles UI and user interaction
 │       - Manages chat history using session state
 │       - Connects rule-based logic with AI fallback
@@ -82,17 +71,12 @@ student-helpdesk-ai/
 │   └── HuggingFace AI integration
 │       - Uses a lightweight transformer model
 │       - Generates AI-powered answers for general questions
->>>>>>> 9d07cdb80ff8ce1f358cbfbe542557e8e1b79e0b
 │
 ├── requirements.txt
 │   └── Project dependencies
 │       - streamlit
-<<<<<<< HEAD
-│       - python libraries
-=======
 │       - transformers
 │       - torch
->>>>>>> 9d07cdb80ff8ce1f358cbfbe542557e8e1b79e0b
 │
 ├── README.md
 │   └── Project documentation
@@ -102,9 +86,20 @@ student-helpdesk-ai/
 │       - Project structure
 │
 └── .gitignore
-<<<<<<< HEAD
-    └── Files ignored by Git
-=======
     └── Files and folders ignored by Git
+'''
+---
 
->>>>>>> 9d07cdb80ff8ce1f358cbfbe542557e8e1b79e0b
+## 🚀 Future Improvements
+- Add HuggingFace AI fallback
+- Improve NLP intent detection
+- Add user authentication
+- Deploy on Streamlit Cloud
+
+---
+
+## 👩‍💻 Author
+**Jishana Jabir**  
+Beginner AI & Data Science Enthusiast
+
+⭐ If you like this project, give it a star!
