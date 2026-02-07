@@ -49,7 +49,7 @@ Deployment: Streamlit Cloud
 
 ## 📂 Project Structure
 
-'''bash
+```bash
 
 student-helpdesk-ai/
 │
@@ -90,7 +90,7 @@ student-helpdesk-ai/
 └── .gitignore
     └── Files and folders ignored by Git
     
-'''
+```
 ---
 
 ## 🚀 Future Improvements
