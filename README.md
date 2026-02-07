@@ -48,7 +48,9 @@ Deployment: Streamlit Cloud
 ---
 
 ## 📂 Project Structure
-'''text
+
+'''bash
+
 student-helpdesk-ai/
 │
 ├── app.py
@@ -87,6 +89,7 @@ student-helpdesk-ai/
 │
 └── .gitignore
     └── Files and folders ignored by Git
+    
 '''
 ---
 
