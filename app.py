@@ -1,38 +1,37 @@
 import streamlit as st
+from data import get_response
+from fallback import fallback_response
 
-if "chat_history" not in st.session_state:
-    st.session_state.chat_history = []
+st.set_page_config(page_title="Student Helpdesk Chatbot", page_icon="🎓")
 
-st.title("🎓 Student Helpdesk Bot")
-st.write("Welcome! Ask me about fees, courses, or hostel.")
+st.title("🎓 Student Helpdesk Chatbot")
+st.caption("Ask about admissions, fees, courses, exams, or general study topics")
 
+# Session state for chat
+if "chat" not in st.session_state:
+    st.session_state.chat = []
+
+# Clear chat button
 if st.button("🧹 Clear Chat"):
-    st.session_state.chat_history = []
-    st.session_state.user_input = ""
+    st.session_state.chat = []
     st.rerun()
 
-question = st.text_input("Ask your question:", key="user_input")
-faq = {
-    "fee": "💰 Fee Structure: The average annual fee ranges from ₹50,000 to ₹1,20,000 depending on the course.",
-    "hostel": "🏠 Hostel Facility: Separate hostels for boys and girls with food and Wi-Fi.",
-    "course": "📚 Courses Offered: Engineering, Arts, Science, Commerce, and Management."
-}
+# User input
+user_query = st.text_input("Ask your question")
 
-if question:
-    responses = []
+if user_query:
+    reply = get_response(user_query)
 
-    for key, answer in faq.items():
-        if key in question.lower():
-            responses.append(answer)
+    if reply == "NOT_FOUND":
+        reply = fallback_response(user_query)
 
-    if not responses:
-        responses.append("❓ Sorry, I don't understand that yet.")
+    st.session_state.chat.append(("You", user_query))
+    st.session_state.chat.append(("Bot", reply))
 
-    st.session_state.chat_history.append(("You", question))
-    for res in responses:
-        st.session_state.chat_history.append(("Bot", res))
-
-
+# Display chat
 st.markdown("---")
-for sender, message in st.session_state.chat_history:
-    st.write(f"**{sender}:** {message}")
+for sender, message in st.session_state.chat:
+    if sender == "You":
+        st.markdown(f"🧑 **You:** {message}")
+    else:
+        st.markdown(f"🤖 **Bot:** {message}")
